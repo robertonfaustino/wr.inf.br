@@ -1,1 +1,44 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WR Informática</title><link rel="icon" type="image/png" href=""><style>html,body{margin:0;padding:0;height:99vh;background-color:#1A1A1A}iframe{width:100%;height:99.4vh;border:none}</style><script>window.onload=function(){var a="aHR0cHM6Ly93cmluZm9ybWF0aWNhLmJ1YmJsZWFwcHMuaW8vdmVyc2lvbi10ZXN0L2Rhc2hib2FyZA==";var b=document.createElement("iframe");b.src=atob(a);b.frameBorder=0;document.body.appendChild(b)};</script></head><body></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="icon" type="image/png" href="">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 99vh;
+            background-color: #1A1A1A;
+        }
+        iframe {
+            width: 100%;
+            height: 99.4vh;
+            border: none;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Partes da URL codificadas em Base64
+            var part1 = "aHR0cHM6Ly93";
+            var part2 = "cmluZm9ybWF0aWN";
+            var part3 = "hLmJ1YmJsZWFwcHMuaW8vdmVyc2lvbi10ZXN0L2Rhc2hib2FyZA==";
+
+            // Reconstruir a URL
+            var url = atob(part1) + atob(part2) + atob(part3);
+
+            // Criar o iframe dinamicamente
+            var iframe = document.createElement("iframe");
+            iframe.src = url;
+            iframe.frameBorder = 0;
+
+            // Adicionar o iframe ao corpo da página
+            document.body.appendChild(iframe);
+        };
+    </script>
+</head>
+<body>
+    <!-- O iframe será injetado aqui pelo JavaScript -->
+</body>
+</html>
